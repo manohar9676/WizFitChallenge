@@ -8,7 +8,7 @@ The **WizFit Challenge Dashboard** is an intuitive and feature-rich Vue.js appli
 
 ---
 ## Live Demo
-Check out the live version of the calculator: [WizFit Challenge Live Demo]([https://js-calculator-silk.vercel.app/](https://wiz-fit-challenge.vercel.app/))
+Check out the live version of the WizFit Challenge: [WizFit Challenge Live Demo]([https://js-calculator-silk.vercel.app/](https://wiz-fit-challenge.vercel.app/))
 
 ## **Features**
 
