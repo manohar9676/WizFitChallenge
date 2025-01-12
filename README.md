@@ -7,6 +7,8 @@ Here’s a professional-style README for your project:
 The **WizFit Challenge Dashboard** is an intuitive and feature-rich Vue.js application designed to provide a user-friendly platform for managing and interacting with school-related campaign data. It allows users to perform advanced data filtering, column customization, and sorting, while maintaining a sleek and responsive design.
 
 ---
+## Live Demo
+Check out the live version of the calculator: [WizFit Challenge Live Demo]([https://js-calculator-silk.vercel.app/](https://wiz-fit-challenge.vercel.app/))
 
 ## **Features**
 
