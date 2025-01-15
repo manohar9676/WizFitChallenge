@@ -1,10 +1,10 @@
 <template>
    <VCard>
     <VCard class="wizfit-header">
-      <img src="../../src/assets/banner.png" alt="WizFit Challenge Logo" class="logo" />
+      <img src="../src/assets/banner.png" alt="WizFit Challenge Logo" class="logo" />
     </VCard>
     <VCard class="player-container">
-      <img src="../../src/assets/player.png" alt="WizFit Challenge Logo" class="playerpng"/>
+      <img src="../src/assets/player.png" alt="WizFit Challenge Logo" class="playerpng"/>
     </VCard>
     <!-- Main content area -->
     <div class="main-content">
