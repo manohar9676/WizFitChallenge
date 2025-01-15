@@ -1,0 +1,330 @@
+.wizfit-header {
+    width: 100%;
+    padding: 0;
+    display: block;
+   }
+   
+   .logo {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: none;
+   }
+   
+   .player-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+   }
+   
+   .playerpng {
+    width: auto;
+    height: 300px;
+   }
+   
+   .main-content {
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 1200px;
+   }
+   
+   .card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+   }
+   
+   .table-container {
+    overflow: hidden;
+    padding: 1rem;
+    width: 100%;
+   }
+   
+   .table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+   }
+   
+   .left-section h3 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 1.25rem;
+   }
+   
+   .right-section {
+    display: flex;
+    gap: 1rem;
+   }
+   
+   .column-settings-btn,
+   .query-builder-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    border: none;
+    background: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+   }
+   
+   .loading-state {
+    padding: 2rem;
+    text-align: center;
+    color: #666;
+   }
+   
+   .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+   }
+   
+   .modal-content {
+    background: white;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 8px;
+   }
+   
+   .modal-header {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+   
+   .modal-header h3 {
+    margin: 0;
+    color: #2c3e50;
+   }
+   
+   .close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #666;
+   }
+   
+   .modal-body {
+    padding: 1rem;
+   }
+   
+   .modal-footer {
+    padding: 1rem;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+   
+   .filter-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+   }
+   
+   .field-select,
+   .operator-select,
+   .value-input {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    flex: 1;
+    min-width: 150px;
+   }
+   
+   .remove-btn {
+    padding: 0.5rem 1rem;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+   }
+   
+   .checkbox-container {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.5rem;
+   }
+   
+   .column-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+   }
+   
+   /* Mobile responsiveness */
+   @media screen and (max-width: 768px) {
+    .logo {
+      width: 100%;
+    }
+    
+    .playerpng {
+      height: 200px;
+    }
+    
+    .table-header {
+      flex-direction: column;
+      gap: 1rem;
+    }
+   
+    .right-section {
+      width: 100%;
+      justify-content: space-between;
+    }
+   
+    .filter-row {
+      flex-direction: column;
+    }
+   
+    .field-select,
+    .operator-select,
+    .value-input {
+      width: 100%;
+    }
+   
+    .modal-content {
+      width: 95%;
+      margin: 1rem;
+    }
+   }
+   
+   .table-wrapper {
+    position: relative;
+    max-height: 500px;
+    overflow-y: auto;
+   }
+   
+   table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+   }
+   
+   thead {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1;
+   }
+   
+   th {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    background: #f8f9fa;
+   }
+   
+   tr {
+    display: flex;
+    width: 100%;
+   }
+   
+   /* Adjust column widths based on content */
+   th:nth-child(1), td:nth-child(1) { /* Name */
+    flex: 2;
+    min-width: 150px;
+   }
+   
+   th:nth-child(2), td:nth-child(2) { /* Email */
+    flex: 3;
+    min-width: 200px;
+   }
+   
+   th:nth-child(3), td:nth-child(3) { /* City */
+    flex: 1.5;
+    min-width: 120px;
+   }
+   
+   th:nth-child(4), td:nth-child(4) { /* State */
+    flex: 1;
+    min-width: 100px;
+   }
+   
+   th:nth-child(5), td:nth-child(5) { /* Sales Rep */
+    flex: 2;
+    min-width: 150px;
+   }
+   
+   th:nth-child(6), td:nth-child(6) { /* School Name */
+    flex: 3;
+    min-width: 200px;
+   }
+   
+   th:nth-child(7), td:nth-child(7) { /* campaign_id */
+    flex: 1;
+    min-width: 100px;
+   }
+   
+   th:nth-child(8), td:nth-child(8) { /* campaign_type */
+    flex: 1.5;
+    min-width: 120px;
+   }
+   
+   td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #eee;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+   }
+   
+   /* Create scrollable columns */
+   tbody {
+    display: block;
+    max-height: 400px;
+   }
+   
+   /* Scrollbar styling */
+   td::-webkit-scrollbar {
+    height: 4px;
+   }
+   
+   td::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+   }
+   
+   td::-webkit-scrollbar-track {
+    background: transparent;
+   }
+   
+   /* Show scrollbar on hover */
+   td:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.4);
+   }
+   
+   @media screen and (max-width: 768px) {
+    .table-wrapper {
+      max-height: 400px;
+    }
+    
+    tbody {
+      max-height: 300px;
+    }
+    
+    th, td {
+      padding: 0.5rem;
+      font-size: 14px;
+    }
+   }
+   
